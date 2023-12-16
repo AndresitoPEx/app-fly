@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Logo = () => {
   return (
-    <div className="w-1/2 sm:w-1/5 lg:w-1/3 mx-auto">
+    <div className="w-1/2 lg:w-1/3 mx-auto">
       <figure className="">
         <Link to="/">
           <img

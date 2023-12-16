@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { ShoppingCart } from "@mui/icons-material";
 import MenuIcon from "@mui/icons-material/Menu";
 import XMark from "@mui/icons-material/Close";
-import { Divider } from "@mui/material";
+
 
 
 const Navbar = () => {
@@ -33,7 +33,7 @@ const Navbar = () => {
     return (
         <nav className="text-white text-lg font-thin z-10 items-center mx-auto pr-10 pl-28 py-5">
             <div className="container mx-auto flex justify-between items-center">
-                
+
 
                 <div className="md:hidden">
                     {menuOpen ? (
@@ -94,9 +94,8 @@ const Navbar = () => {
 
             {/* Menú para pantallas pequeñas */}
             <ul
-                className={`md:hidden flex flex-col items-center gap-4 ${
-                    menuOpen ? "flex" : "hidden"
-                }`}
+                className={`md:hidden flex flex-col items-center gap-4 ${menuOpen ? "flex" : "hidden"
+                    }`}
             >
                 <li>
                     <NavLink
