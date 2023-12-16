@@ -1,14 +1,22 @@
-import { Link } from "react-router-dom"
-import Navbar from "../Navbar"
-import Logo from "../Logo"
+import Navbar from "../Navbar";
+import Logo from "../Logo";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center w-full fixed top-0 bg-black py-2">  
-      <Logo />
-      <Navbar />
-    </div>
-  )
-}
+    <header className=" text-white w-full">
+      <div className="container mx-auto flex justify-between items-center ">
+        {/* Logo a la izquierda */}
+        <div className="">
+          <Logo />
+        </div>
 
-export default Header
+        {/* Navbar a la derecha */}
+        <div className="flex-grow flex justify-end">
+          <Navbar />
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;

@@ -1,15 +1,19 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const Logo = () => {
-    return (
-        <div className="flex items-center">
-            <figure className="w-1/3 sm:w-1/4 md:w-1/4 lg:w-1/4 xl:w-1/4 mx-auto">
-                <Link to="/">
-                    <img className="w-full" src="https://i.postimg.cc/LsKBsxX9/log2.png" alt="" />
-                </Link>
-            </figure>
-        </div>
-    )
-}
+  return (
+    <div className="w-1/2 sm:w-1/5 lg:w-1/3 mx-auto">
+      <figure className="">
+        <Link to="/">
+          <img
+            className="w-full "
+            src="../logo.png"
+            alt="Fly Alone"
+          />
+        </Link>
+      </figure>
+    </div>
+  );
+};
 
-export default Logo
+export default Logo;
