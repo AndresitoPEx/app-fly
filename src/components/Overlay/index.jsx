@@ -5,7 +5,7 @@ const OverlayComponent = () => {
   return (
     <div className="overlay-container">
       <div className="overlay">
-        <Typography variant="h1" className="overlay-text">
+        <Typography variant="h2" className="overlay-text">
          ALAS Y MODA
         </Typography>
         <Typography variant="h5" className="overlay-text">

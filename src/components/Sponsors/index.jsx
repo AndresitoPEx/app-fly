@@ -75,7 +75,7 @@ const SponsorSection = () => {
     return (
         <section className="bg-gray-400 py-10">
             <div className="container mx-auto text-center">
-                <Typography variant="h2" className="italic text-gray-800 font-bold mb-6 pb-10">
+                <Typography variant="h3" className="italic text-gray-800 font-bold mb-6 pb-10">
                     Auspiciadores
                 </Typography>
                 <Slider {...settings}>

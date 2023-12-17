@@ -19,10 +19,10 @@ const Home = () => {
                         </div>
                     <OverlayComponent />
                         <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left md:px-12 lg:px-24 p-20 h-full">
-                            <Typography variant="h4" className="italic message-text text-gray-100">
+                            <Typography variant="h5" className="italic message-text text-gray-100">
                                 Despliega tu <strong>elegancia</strong>,
                             </Typography>
-                            <Typography variant="h4" className="italic message-text text-gray-100 pt-10">
+                            <Typography variant="h5" className="italic message-text text-gray-100 pt-10">
                                 Conquista tu <strong>cielo.</strong>
                             </Typography>
                         </div>
@@ -32,7 +32,7 @@ const Home = () => {
 
             <Container maxWidth="lg">
                 <section className="p-20 w-full text-center">
-                    <Typography variant="h2" className="italic text-gray-100 font-bold mb-4">
+                    <Typography variant="h3" className="italic text-gray-100 font-bold mb-4">
                         Más allá de la moda. Un evento para compartir
                     </Typography>
                     <Typography variant="body1" className="italic text-gray-100 mb-4 tracking-wide">
