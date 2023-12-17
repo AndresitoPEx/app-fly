@@ -1,0 +1,18 @@
+/* SponsorSection.css */
+.sponsor-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Ajusta la altura según sea necesario */
+  }
+  
+  .sponsor-image {
+    max-width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .sponsor-image.active {
+    opacity: 1;
+  }
+  

@@ -8,7 +8,7 @@ import XMark from "@mui/icons-material/Close";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-    const activeStyle = "text-[#FFD700] sm:border-b-2 sm:border-[#FFD700] pb-1 transition duration-500 ease-in-out font-semibold";
+    const activeStyle = "text-[#D9A86C] sm:border-b-2 sm:border-[#D9A86C] pb-1 transition duration-500 ease-in-out font-semibold";
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -31,19 +31,19 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className="text-white text-lg font-thin z-10 items-center mx-auto pr-10 pl-28 py-5">
-            <div className="container mx-auto flex justify-between items-center">
+        <nav className="text-gray-100 text-lg font-light z-10 items-center ml-60">
+            <div className="container flex justify-between items-center">
 
 
                 <div className="md:hidden">
                     {menuOpen ? (
                         <XMark
-                            className="h-6 w-6 cursor-pointer transition duration-500 mx-4 ease-in-out hover:text-[#FFD700]"
+                            className="h-6 w-6 cursor-pointer transition duration-500 mx-4 ease-in-out hover:text-[#D9A86C]"
                             onClick={toggleMenu}
                         />
                     ) : (
                         <MenuIcon
-                            className="h-6 w-6 cursor-pointer transition duration-500 mx-4 ease-in-out hover:text-[#FFD700]"
+                            className="h-6 w-6 cursor-pointer transition duration-500 mx-4 ease-in-out hover:text-[#D9A86C]"
                             onClick={toggleMenu}
                         />
                     )}
@@ -63,6 +63,14 @@ const Navbar = () => {
                     <li>
                         <NavLink
                             className={({ isActive }) => (isActive ? activeStyle : undefined)}
+                            to="/gallery"
+                        >
+                            Gallery
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            className={({ isActive }) => (isActive ? activeStyle : undefined)}
                             to="/about"
                         >
                             About
@@ -76,14 +84,7 @@ const Navbar = () => {
                             Contact
                         </NavLink>
                     </li>
-                    <li>
-                        <NavLink
-                            className={({ isActive }) => (isActive ? activeStyle : undefined)}
-                            to="/gallery"
-                        >
-                            Gallery
-                        </NavLink>
-                    </li>
+
                     <li>
                         <button className="flex items-center justify-center">
                             <ShoppingCart className="h-6 w-6 cursor-pointer" />

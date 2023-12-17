@@ -3,12 +3,9 @@
     transform: scale(1);
     filter: blur(0px);
   }
-  50% {
-    transform: scale(1);
-    filter: blur(0px);
-  }
+
   100% {
-    transform: scale(1.2);
+    transform: scale(1.1);
     filter: blur(0px);
   }
 }
@@ -47,19 +44,19 @@
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
-  animation: zoomAndBlur 50s ease-in-out infinite alternate;
+  animation: zoomAndBlur 30s ease-in-out infinite alternate;
   will-change: transform;
 }
 
 .message-text {
   position: absolute;
-  top: 30%;
+  top: 10%;
   left: 10%;
   text-align: left;
   font-weight: 100;
   opacity: 0;
   animation: fadeInUp 2s ease-in-out forwards;
-  font-family: 'Grandiflora One', cursive;
+  font-family: Arial, sans-serif;
   will-change: opacity, transform;
 }
 
@@ -67,3 +64,23 @@
 .message-text:nth-child(2) {
   animation-delay: 2s; /* Agrega un retraso para la segunda línea de texto */
 }
+.overlay-box {
+  background-color: rgba(0, 0, 0, 0.1); /* Cambia el valor de '0.1' según desees la transparencia */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vw;
+}
+
+.overlay-text {
+  color: #fff; /* Cambia el color del texto según tu preferencia */
+  text-align: center;
+  padding: 20px;
+  font-size: 2vw;
+}
+

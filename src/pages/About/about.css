@@ -1,0 +1,120 @@
+/* about.css */
+
+/* Estilos para el efecto parallax */
+.custom-parallax-image {
+
+    position: relative;
+    text-align: center;
+    /* Alinea el texto al centro */
+    color: #fff;
+    /* Color del texto */
+}
+
+.custom-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semi-transparente */
+    padding: 20px;
+    /* Ajusta el espacio alrededor del texto */
+    border-radius: 10px;
+    /* Agrega bordes redondeados al contenedor del texto */
+}
+
+
+.custom-parallax-section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.custom-parallax-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/* Estilos para el contenido después del parallax */
+.custom-section {
+    padding: 10px;
+    width: 100%;
+}
+
+.custom-container {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.custom-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.custom-justify-center {
+    justify-content: center;
+}
+
+.custom-grid-cols-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Estilos específicos para el texto e imagen */
+.custom-italic {
+    font-style: italic;
+}
+
+.custom-message-text {
+    font-weight: 100;
+}
+
+.custom-text-gray {
+    color: #fff;
+}
+
+.custom-bg-black {
+    background-color: #000;
+}
+
+.custom-image-container {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.custom-image {
+    width: 50%;
+    height: auto;
+
+}
+
+.custom-text-2xl {
+    font-size: 1.5rem;
+}
+
+.custom-font-thin {
+    font-weight: 300;
+}
+
+.custom-tracking-wide {
+    letter-spacing: 0.05em;
+}

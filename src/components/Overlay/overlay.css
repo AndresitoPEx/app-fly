@@ -1,0 +1,46 @@
+/* overlay.css */
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinea el contenido al lado izquierdo */
+    visibility: hidden; /* Usamos visibility en lugar de display */
+    padding: 60px;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.3); /* Ajusta la transparencia aquí */
+    padding: 20px;
+    text-align: center; /* Alinea el texto al centro dentro del cuadro */
+    border-radius: 10px;
+    animation: fadeInOverlay 0.5s ease-out 5s forwards;
+  }
+  
+  .overlay-text {
+    color: white;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  /* Aplicar estilos específicos para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .overlay-container {
+      padding: 20px; /* Ajusta el padding para pantallas más pequeñas */
+    }
+  }
+  
+  @keyframes fadeInOverlay {
+    from {
+      opacity: 0; /* Empieza con opacidad 0 */
+    }
+    to {
+      opacity: 1; /* Termina con opacidad 1 */
+      visibility: visible; /* Cambiamos visibility a visible */
+    }
+  }
+  
