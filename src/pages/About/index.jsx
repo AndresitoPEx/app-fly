@@ -13,7 +13,7 @@ const About = () => {
             <div className="custom-parallax-image" style={{ backgroundImage: "url(https://i.postimg.cc/P5XS2dKW/img2ok.jpg)" }}>
               <div className="custom-overlay w-full">
                 <div className="custom-flex-container">
-                  <Typography variant="h4" className="custom-italic custom-message-text custom-text-gray">
+                  <Typography variant="h5" className="custom-italic custom-message-text custom-text-gray">
                     SOBRE NOSOTROS
                   </Typography>
                 </div>

@@ -8,7 +8,11 @@ const Footer = () => {
       <Container maxWidth="lg">
         <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center">
           <div className="mb-6 lg:mb-0">
-            <h2 className="text-4xl font-bold">Fly Alone</h2>
+            <img
+              className="w-full lg:w-1/4"
+              src="../logo1ok.png"
+              alt="Fly Alone"
+            />
             <p className="mt-2"></p>
           </div>
           <div className="flex items-center space-x-4">

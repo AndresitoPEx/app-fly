@@ -44,7 +44,7 @@
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
-  animation: zoomAndBlur 30s ease-in-out infinite alternate;
+  animation: zoomAndBlur 20s ease-in-out infinite alternate;
   will-change: transform;
 }
 
@@ -55,7 +55,7 @@
   text-align: left;
   font-weight: 100;
   opacity: 0;
-  animation: fadeInUp 2s ease-in-out forwards;
+  animation: fadeInUp 1s ease-in-out forwards;
   font-family: Arial, sans-serif;
   will-change: opacity, transform;
 }

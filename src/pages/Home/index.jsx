@@ -15,7 +15,7 @@ const Home = () => {
             <section className="w-full bg-no-repeat bg-cover bg-center relative">
                 <section className="parallax-section">
                     <div className="parallax-container relative">
-                        <div className="parallax-image" style={{ backgroundImage: `url(${backgroundImage})` }}>
+                        <div className="parallax-image " style={{ backgroundImage: `url(${backgroundImage})` }}>
                         </div>
                     <OverlayComponent />
                         <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left md:px-12 lg:px-24 p-20 h-full">
