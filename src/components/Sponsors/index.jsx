@@ -6,9 +6,6 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { useEffect, useState } from 'react';
 
-
-
-
 const SponsorSection = () => {
     // Lista de URLs de las imágenes de los patrocinadores
     const sponsors = [
@@ -37,9 +34,6 @@ const SponsorSection = () => {
         'https://i.postimg.cc/zv7cLgdQ/sponsor22.jpg',
         'https://i.postimg.cc/7YPRFKhr/sponsor23.jpg',
         'https://i.postimg.cc/c1Bjkpsc/sponsor24.jpg',
-
-        
-
     ];
 
     const [currentSponsor, setCurrentSponsor] = useState(0);
@@ -67,16 +61,18 @@ const SponsorSection = () => {
                 settings: {
                     slidesToShow: 1, // Cambia la cantidad de imágenes mostradas en pantallas pequeñas
                     autoplaySpeed: 1500, // Ajusta la velocidad de reproducción en pantallas pequeñas
+                    centerMode: true, // Centra las imágenes en pantallas pequeñas
+                    centerPadding: '30px', // Ajusta el espacio entre imágenes centradas
                 },
             },
         ],
     };
-    
 
     return (
-        <section className="bg-gray-400 py-10">
+        <section className="bg-gray-400 py-10 overflow-hidden">
+            {/* Se ha agregado 'overflow-hidden' para evitar que el carrusel sobresalga */}
             <div className="container mx-auto text-center">
-                <Typography variant="h3" className="italic text-gray-800 font-bold mb-6 pb-10">
+                <Typography variant="h4" className="italic text-gray-800 font-bold mb-6 pb-10">
                     Auspiciadores
                 </Typography>
                 <Slider {...settings}>

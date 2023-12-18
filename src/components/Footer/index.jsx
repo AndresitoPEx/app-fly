@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center">
           <div className="mb-6 lg:mb-0">
             <img
-              className="w-full lg:w-1/4"
+              className="w-full lg:w-1/4 min-w-[150px] max-w-[150px]"
               src="../logo1ok.png"
               alt="Fly Alone"
             />

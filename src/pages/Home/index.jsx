@@ -32,7 +32,7 @@ const Home = () => {
 
             <Container maxWidth="lg">
                 <section className="p-20 w-full text-center">
-                    <Typography variant="h3" className="italic text-gray-100 font-bold mb-4">
+                    <Typography variant="h4" className="italic text-gray-100 font-bold mb-4">
                         Más allá de la moda. Un evento para compartir
                     </Typography>
                     <Typography variant="body1" className="italic text-gray-100 mb-4 tracking-wide">
