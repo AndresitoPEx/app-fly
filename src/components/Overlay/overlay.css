@@ -1,46 +1,55 @@
-/* overlay.css */
-
 .overlay-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Alinea el contenido al lado izquierdo */
-    visibility: hidden; /* Usamos visibility en lugar de display */
-    padding: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinea el contenido a la izquierda */
+  animation-delay: 5s;
+}
+
+.overlay {
+  width: 100%; /* Ajusta el ancho del overlay */
+  max-width: 500px; /* Ancho máximo en pantallas más grandes */
+  background-color: rgba(0, 0, 0, 0.2); /* Ajusta la transparencia aquí */
+  padding: 20px;
+  text-align: center; /* Alinea el texto al centro dentro del cuadro */
+  border-radius: 10px;
+  margin-left: 10rem;
+  animation: fadeInOverlay 0.5s ease-out 3s forwards;
+  visibility: hidden; /* Oculta el overlay al principio */
+}
+
+.overlay-text {
+  color: white;
+}
+
+.overlay-image {
+  width: 100%; /* Ajusta el ancho según sea necesario */
+  height: auto; /* Ajusta la altura según sea necesario */
+  filter: invert(100%); /* Invierte el color de la imagen */
+}
+
+/* Aplicar estilos específicos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .overlay-container {
+    padding: 20px; /* Ajusta el padding para pantallas más pequeñas */
+    justify-content: center; /* Alinea el contenido al centro en pantallas pequeñas */
   }
-  
   .overlay {
-    background-color: rgba(0, 0, 0, 0.3); /* Ajusta la transparencia aquí */
-    padding: 20px;
-    text-align: center; /* Alinea el texto al centro dentro del cuadro */
-    border-radius: 10px;
-    animation: fadeInOverlay 0.5s ease-out 5s forwards;
+    width: calc(100% - 2rem); /* Ajusta el ancho del overlay en pantallas pequeñas */
+    margin-left: 1rem; /* Agrega un pequeño margen a la izquierda en pantallas pequeñas */
   }
-  
-  .overlay-text {
-    color: white;
-    font-weight: bold;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@keyframes fadeInOverlay {
+  from {
+    opacity: 0; /* Empieza con opacidad 0 */
   }
-  
-  /* Aplicar estilos específicos para pantallas pequeñas */
-  @media (max-width: 768px) {
-    .overlay-container {
-      padding: 20px; /* Ajusta el padding para pantallas más pequeñas */
-    }
+  to {
+    opacity: 1; /* Termina con opacidad 1 */
+    visibility: visible; /* Cambiamos visibility a visible */
   }
-  
-  @keyframes fadeInOverlay {
-    from {
-      opacity: 0; /* Empieza con opacidad 0 */
-    }
-    to {
-      opacity: 1; /* Termina con opacidad 1 */
-      visibility: visible; /* Cambiamos visibility a visible */
-    }
-  }
-  
+}

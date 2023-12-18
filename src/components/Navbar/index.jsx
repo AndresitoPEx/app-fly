@@ -98,7 +98,7 @@ const Navbar = () => {
                     className={`md:hidden absolute top-16 left-2 right-2 bg-black z-20 transition-all duration-300 ${menuOpen ? "opacity-100 scale-100" : "opacity-0 scale-95"
                         } transform origin-top`}
                 >
-                    <ul className={`flex flex-col items-center gap-4 pt-4 pb-6`}>
+                    <ul className={`flex flex-col items-center gap-2`}>
                         <li>
                             <NavLink
                                 className={({ isActive }) =>

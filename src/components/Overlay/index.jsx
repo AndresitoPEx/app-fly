@@ -2,14 +2,17 @@ import './overlay.css';
 import { Typography } from '@mui/material';
 
 const OverlayComponent = () => {
+
+  const alas = "../alas-ok.png"
+
   return (
     <div className="overlay-container">
       <div className="overlay">
-        <Typography variant="h2" className="overlay-text">
-         ALAS Y MODA
-        </Typography>
-        <Typography variant="h5" className="overlay-text">
-          20 de Diciembre
+        <img src={alas} alt="Alas y Moda" className="overlay-image" />
+        <Typography className="overlay-text">
+          <label className='italic font-extralight'>
+            20 de Diciembre.
+          </label>
         </Typography>
       </div>
     </div>
